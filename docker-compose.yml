@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ml:
+    build: ./ml
+    tty: true
+    working_dir: /var/www/myapp
+    volumes:
+      - ./src:/var/www/myapp
